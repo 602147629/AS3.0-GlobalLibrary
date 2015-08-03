@@ -1,0 +1,13 @@
+body, p, input, button {
+	font-family: "Lucida Grande", "Arial", sans-serif;
+	font-size: 11px;
+}
+
+#content_container {
+	margin: 20px;
+}
+
+.menuheader {
+	margin-left: 20px;
+	font-weight: bold;
+}

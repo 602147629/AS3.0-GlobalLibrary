@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)http://monsterdebugger.dev/tour/application-panel -->
+
+<html xml:lang="" xmlns="http://www.w3.org/1999/xhtml" lang="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+    <title>Monster Debugger - Tour</title>
+    <link rel="stylesheet" type="text/css" href="./css/imagescroller.css" />
+    <script src="./js/jquery-1.4.2.js" type="text/javascript">
+</script>
+    <script src="./js/jquery.imagescroller.js" type="text/javascript">
+</script>
+    <script src="./js/shCore.js" type="text/javascript">
+</script>
+    <script src="./js/shBrushAS3.js" type="text/javascript">
+</script>
+    <script src="./js/shBrushXml.js" type="text/javascript">
+</script>
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
+    <link rel="stylesheet" type="text/css" href="./css/shCore.css" />
+    <link rel="stylesheet" type="text/css" href="./css/shThemeDefault.css" />
+    <script type="text/javascript">
+//<![CDATA[
+            SyntaxHighlighter.defaults['toolbar'] = false;
+            SyntaxHighlighter.all()
+    //]]>
+    </script>
+    <script src="./js/functions.js" type="text/javascript">
+</script>
+</head>
+
+<body id="page-tour">
+    <div id="content_container">
+        <div id="content">
+            <div class="collumn-3-wide">
+                <div class="filled collumn-3-wide">
+                    <div class="header">
+                        <!--  -->
+                    </div>
+
+                    <div class="content">
+                        <h1>12. Breakpoints</h1><img src="./images/breakpoint-status.png" />
+
+                        <p>From version 3 of the Monster Debugger there is support for a breakpoint system. Enabling them does require you to run your application in the Flash Debug Player or Adobe Debug Launcher (ADL). If you have the debug player running you can easily add breakpoint in your code using the following function:</p>
+
+                        <pre class="brush: as3"> 
+MonsterDebugger.breakpoint(this);</pre>
+
+                        <p>When you run your code, you will notice that the Monster Debugger will pause your application once it reaches the breakpoint and display a notice of this event in the application window.</p>
+
+                        <p>You have several options from here, you can hit the play button so the application will continue to run until it reaches another breakpoint, you can view the stack trace of the current breakpoint or you can open the ActionScript or MXML file with our build in viewer.</p><img src="./images/breakpoint-stacktrace.png" />
+
+                        <p>The viewer navigates you to the file and line number where the breakpoint was found to see what your code looks like.</p><img src="./images/breakpoint-editor.png" />
+
+                        <p>By clicking the pause button you can also pause your application at any time, the stack trace and the viewer of the source code will not be available though with a manual pause.</p>
+                    </div>
+
+                    <div class="footer">
+                        <!-- -->
+                    </div>
+                </div>
+
+                <div class="clear">
+                    <!--  -->
+                </div>
+
+                <div class="tour_navigation">
+                    <a class="prev_tour" href="monitor.html"><span>11. Memory monitor</span></a>
+
+                    <div class="bg"></div>
+                </div>
+
+                <div class="clear">
+                    <!--  -->
+                </div>
+            </div>
+       
+        </div>
+    </div>
+</body>
+</html>

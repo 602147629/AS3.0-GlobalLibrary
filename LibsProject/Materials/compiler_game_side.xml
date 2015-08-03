@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<flex-config xmlns="http://www.adobe.com/2006/flex-config">
+	<include-classes>
+		<class>com.win.blackbox.ISlotModule</class>
+		<class>com.win.blackbox.ISlotController</class>
+		<class>com.win.blackbox.IAssetsManager</class>
+		<class>com.win.blackbox.BlackBoxInfo</class>
+		<class>com.win.blackbox.AppTypes</class>
+		<class>com.win.blackbox.AssetsTypes</class>
+		<class>com.win.blackbox.SlotDialogEventTypes</class>
+		<class>com.win.blackbox.data.SlotDataVerifier</class>
+		<class>com.win.blackbox.data.SpinRequestData</class>
+		<class>com.win.blackbox.data.SpinResponseData</class>
+		<class>com.win.blackbox.data.SlotInitVO</class>
+		<class>com.win.blackbox.data.BetData</class>
+	</include-classes>
+</flex-config>

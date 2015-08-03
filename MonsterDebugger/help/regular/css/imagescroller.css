@@ -1,0 +1,206 @@
+.project-gallery,
+.project-gallery-medium,
+.project-gallery-small,
+.project-gallery-tall {
+  overflow: hidden;
+}
+.project-gallery .animation,
+.project-gallery-medium .animation,
+.project-gallery-small .animation,
+.project-gallery-tall .animation {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  visibility: visible;
+}
+.project-gallery img,
+.project-gallery-medium img,
+.project-gallery-small img,
+.project-gallery-tall img {
+  position: absolute;
+  border: 0;
+  display: none;
+  z-index: 1;
+  visibility: hidden;
+}
+.project-gallery img.current,
+.project-gallery-medium img.current,
+.project-gallery-small img.current,
+.project-gallery-tall img.current {
+  display: block;
+  visibility: visible;
+}
+.project-gallery .caption,
+.project-gallery-medium .caption,
+.project-gallery-small .caption,
+.project-gallery-tall .caption {
+  margin-top: 10px;
+}
+.project-gallery a.prev,
+.project-gallery-medium a.prev,
+.project-gallery-small a.prev,
+.project-gallery-tall a.prev {
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  background: transparent;
+  background-image: url(../images/gallery/button-gallery-previous.png) !important;
+  background-repeat: no-repeat;
+  background-position: left center;
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+  z-index: 10;
+}
+.project-gallery a.next,
+.project-gallery-medium a.next,
+.project-gallery-small a.next,
+.project-gallery-tall a.next {
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  background: transparent;
+  background-image: url(../images/gallery/button-gallery-next.png) !important;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+  z-index: 10;
+}
+.project-gallery a.next:hover,
+.project-gallery-medium a.next:hover,
+.project-gallery-small a.next:hover,
+.project-gallery-tall a.next:hover {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.project-gallery a.prev:hover,
+.project-gallery-medium a.prev:hover,
+.project-gallery-small a.prev:hover,
+.project-gallery-tall a.prev:hover {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.project-gallery .project-gallery-bottom,
+.project-gallery-medium .project-gallery-bottom,
+.project-gallery-small .project-gallery-bottom,
+.project-gallery-tall .project-gallery-bottom {
+  width: 580px;
+  height: 28px;
+  position: relative;
+}
+.project-gallery .imagescroller-positions,
+.project-gallery-medium .imagescroller-positions,
+.project-gallery-small .imagescroller-positions,
+.project-gallery-tall .imagescroller-positions {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  z-index: 99999;
+  width: inherit;
+  height: 10px;
+}
+.project-gallery .imagescroller-positions ul,
+.project-gallery-medium .imagescroller-positions ul,
+.project-gallery-small .imagescroller-positions ul,
+.project-gallery-tall .imagescroller-positions ul {
+  float: right;
+}
+.project-gallery .imagescroller-positions .visible,
+.project-gallery-medium .imagescroller-positions .visible,
+.project-gallery-small .imagescroller-positions .visible,
+.project-gallery-tall .imagescroller-positions .visible {
+  background-image: url(../images/gallery/invisible-img.png);
+  width: 10px;
+  height: 10px;
+  float: left;
+  list-style: none !important;
+  cursor: pointer;
+}
+.project-gallery .imagescroller-positions .invisible,
+.project-gallery-medium .imagescroller-positions .invisible,
+.project-gallery-small .imagescroller-positions .invisible,
+.project-gallery-tall .imagescroller-positions .invisible {
+  background-image: url(../images/gallery/visible-img.png);
+  width: 10px;
+  height: 10px;
+  float: left;
+  list-style: none !important;
+  cursor: pointer;
+}
+.project-gallery {
+  height: 466px;
+  width: 580px;
+  margin-bottom: 35px;
+  /*
+	.project-gallery-content {
+		height: 100%;
+	}
+*/
+
+}
+.project-gallery .project-gallery-content {
+  height: 466px;
+  width: 580px;
+  position: relative;
+  overflow: hidden;
+}
+.project-gallery-small {
+  height: 436px;
+  width: 580px;
+  margin-bottom: 35px;
+}
+.project-gallery-small .project-gallery-content {
+  height: 436px;
+  width: 580px;
+  position: relative;
+  overflow: hidden;
+}
+.project-gallery-medium {
+  height: 444px;
+  width: 580px;
+  margin-bottom: 35px;
+}
+.project-gallery-medium .project-gallery-content {
+  height: 444px;
+  width: 580px;
+  position: relative;
+  overflow: hidden;
+}
+.project-gallery-tall {
+  height: 501px;
+  width: 580px;
+  margin-bottom: 35px;
+}
+.project-gallery-tall .project-gallery-content {
+  height: 501px;
+  width: 580px;
+  position: relative;
+  overflow: hidden;
+}
+.gallery-mobile {
+  display: none;
+}
+#preview-gallery-highlight {
+  margin-bottom: 0px;
+}
+.gallery-mobile {
+  display: none;
+}
+/*
+#preview-rammstein a:hover, .project-gallery a:hover, #page-projects .project-gallery a:hover, #page-projects .project-gallery-bottom a:hover {
+	background-color: transparent;
+}
+*/

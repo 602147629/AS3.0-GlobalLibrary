@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)http://monsterdebugger.dev/tour/application-panel -->
+
+<html xml:lang="" xmlns="http://www.w3.org/1999/xhtml" lang="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+    <title>Monster Debugger - Tour</title>
+    <link rel="stylesheet" type="text/css" href="./css/imagescroller.css" />
+    <script src="./js/jquery-1.4.2.js" type="text/javascript">
+</script>
+    <script src="./js/jquery.imagescroller.js" type="text/javascript">
+</script>
+    <script src="./js/shCore.js" type="text/javascript">
+</script>
+    <script src="./js/shBrushAS3.js" type="text/javascript">
+</script>
+    <script src="./js/shBrushXml.js" type="text/javascript">
+</script>
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
+    <link rel="stylesheet" type="text/css" href="./css/shCore.css" />
+    <link rel="stylesheet" type="text/css" href="./css/shThemeDefault.css" />
+    <script type="text/javascript">
+//<![CDATA[
+            SyntaxHighlighter.defaults['toolbar'] = false;
+            SyntaxHighlighter.all()
+    //]]>
+    </script>
+    <script src="./js/functions.js" type="text/javascript">
+</script>
+</head>
+
+<body id="page-tour">
+    <div id="content_container">
+        <div id="content">
+            <div class="collumn-3-wide">
+                <div class="filled collumn-3-wide">
+                    <div class="header">
+                        <!--  -->
+                    </div>
+
+                    <div class="content">
+                        <h1>10. The traces panel</h1><img src="./images/traces-panel.png" />
+
+                        <p>When De Monsters designed the very first version of the Monster Debugger (0.9) it only had one feature: The traces panel. This panel is by far the most used feature within the Monster Debugger. It displays messages (so called traces) from you code and allows you to inspect your data. The traces panel shows it all: Strings, Numbers, Arrays, XML, Objects, Vectors and even all your custom classes.</p>
+
+                        <p>Commonly used scenarios include tracing XML data from a server to see it's structure, tracing responses from poorly documented social network API's or just tracing a message to see if a function is called properly.</p>
+
+                        <h2>Tracing a simple message</h2>
+
+                        <pre class="brush: as3"> 
+MonsterDebugger.trace(this, "Hello World!");</pre>
+                        <img src="./images/trace-string.png" />
+
+                        <h2>Tracing an array</h2>
+
+                        <pre class="brush: as3"> 
+var fruit:Array = ["apple", "orange", "banana"];
+MonsterDebugger.trace(this, fruit);</pre> <img src="./images/trace-array.png" />
+
+                        <h2>Tracing an object</h2>
+
+                        <pre class="brush: as3"> 
+var person:Object = {name:"Mike", age:25, gender:"Male"};
+MonsterDebugger.trace(this, person);</pre> <img src="./images/trace-object.png" />
+
+                        <h2>Tracing a custom class</h2>
+
+                       <pre class="brush: as3"> 
+var person:Object = {name:"Mike", age:25, gender:"Male"};
+MonsterDebugger.trace(this, person);</pre> <img src="./images/trace-class.png" />
+
+                        <p>Each trace message can be given a color or name. This can be useful for keeping overview in your traces or when working in a team of developers. The following examples shows how you can work with color and labels in your traces:</p>
+
+                        <h2>Tracing with a label or a person name</h2>
+
+                        <pre class="brush: as3"> 
+MonsterDebugger.trace(this, "Message by Mike", "mike", "label");
+MonsterDebugger.trace(this, "Message by Joe", "joe", "label");</pre>
+                        <h2>Tracing an error:</h2>
+
+                        <pre class="brush: as3"> 
+MonsterDebugger.trace(this, "ERROR!", "", "", 0xFF0000;</pre>
+                    </div>
+
+                    <div class="footer">
+                        <!-- -->
+                    </div>
+                </div>
+            </div>
+            <div class="tour_navigation">
+		<a class="prev_tour" href="methods.html"><span>9. Methods panel</span><div class="bg" style="display: none; "></div></a><br/><a class="next_tour" href="monitor.html"><span>11. Memory monitor</span><div class="bg" style="display: none; "></div></a>	</div>
+        </div>
+    </div>
+</body>
+</html>

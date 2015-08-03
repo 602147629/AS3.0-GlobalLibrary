@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="ZInteractive">
+    <configurations>
+      <configuration name="ZInteractive" pure-as="true" main-class="Main" output-file="Main.swf" output-folder="$MODULE_DIR$/out/production/ZInteractive" wrapper-template-path="$MODULE_DIR$/html-template">
+        <dependencies target-player="11.1">
+          <entries>
+            <entry library-name="Console2.6+asdoc" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="MonsterDebugger" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="bulk_loader" library-level="project">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="4.6" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="4.6" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Console2.6+asdoc" level="application" />
+    <orderEntry type="library" exported="" name="MonsterDebugger" level="application" />
+    <orderEntry type="library" exported="" name="Console2.6+asdoc" level="project" />
+    <orderEntry type="library" exported="" name="MonsterDebugger" level="project" />
+    <orderEntry type="library" exported="" name="bulk_loader" level="project" />
+  </component>
+</module>
+
